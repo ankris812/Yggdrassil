@@ -2,7 +2,7 @@
 
 from flipper.app import App
 from os.path import join, exists, relpath
-from os import makedirs, walk
+from os import makedirs, walk, environ
 from update import Main as UpdateMain
 import shutil
 import zipfile
@@ -20,6 +20,7 @@ class ProjectDir:
 
 class Main(App):
     DIST_FILE_PREFIX = "flipper-z-"
+    DIST_FOLDER_MAX_NAME_LENGTH = 80
 
     def init(self):
         self.subparsers = self.parser.add_subparsers(help="sub-command help")
@@ -129,7 +130,9 @@ class Main(App):
         )
 
         if self.args.version:
-            bundle_dir_name = f"{self.target}-update-{self.args.suffix}"
+            bundle_dir_name = f"{self.target}-update-{self.args.suffix}"[
+                : self.DIST_FOLDER_MAX_NAME_LENGTH
+            ]
             bundle_dir = join(self.output_dir_path, bundle_dir_name)
             bundle_args = [
                 "generate",
@@ -156,6 +159,14 @@ class Main(App):
                     )
                 )
             bundle_args.extend(self.other_args)
+            log_custom_fz_name = (
+                environ.get("CUSTOM_FLIPPER_NAME", None)
+                or ""
+            )
+            if (log_custom_fz_name != "") and (len(log_custom_fz_name) <= 8) and (log_custom_fz_name.isalnum()) and (log_custom_fz_name.isascii()):
+                self.logger.info(
+                    f"Flipper Custom Name is set:\n\tName: {log_custom_fz_name} : length - {len(log_custom_fz_name)} chars"
+                )
 
             if (bundle_result := UpdateMain(no_exit=True)(bundle_args)) == 0:
                 self.logger.info(
@@ -170,6 +181,7 @@ class Main(App):
                     ),
                     "w:gz",
                     compresslevel=9,
+                    format=tarfile.USTAR_FORMAT,
                 ) as tar:
                     tar.add(bundle_dir, arcname=bundle_dir_name)
 

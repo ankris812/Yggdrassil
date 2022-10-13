@@ -14,7 +14,7 @@ DEBUG = 1
 
 # Suffix to add to files when building distribution
 # If OS environment has DIST_SUFFIX set, it will be used instead
-DIST_SUFFIX = "local"
+DIST_SUFFIX = "Korai"
 
 # Coprocessor firmware
 COPRO_OB_DATA = "scripts/ob.data"
@@ -79,10 +79,18 @@ FIRMWARE_APPS = {
         # Debug
         # "debug_apps",
     ],
-    "unit_tests": [
+    "debug_pack": [
+        # Svc
         "basic_services",
-        "updater_app",
-        "unit_tests",
+        # Apps
+        "main_apps_default",
+        "system_apps",
+        # Settings
+        "settings_apps",
+        # Plugins
+        # "basic_plugins",
+        # Debug
+        # "debug_apps",
     ],
 }
 

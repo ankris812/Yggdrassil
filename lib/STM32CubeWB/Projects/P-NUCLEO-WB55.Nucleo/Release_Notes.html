@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for P-NUCLEO-WB55.Nucleo Projects</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../../_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="../../_htmresc/favicon.png" />
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for">Release Notes for</h1>
+<h1 id="p-nucleo-wb55.nucleo-projects"><mark>P-NUCLEO-WB55.Nucleo Projects</mark></h1>
+<p>Copyright © 2019 STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="../../_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h1 id="purpose">Purpose</h1>
+<p>This directory contains the examples and applications to demonstrate the capabilities of the P-NUCLEO-WB55 Kit.</p>
+<p>Most of those projects are generated with STM32CubeMX tool to initialize the system, peripherals and middleware stacks.</p>
+<p>Several applications are provided ready to use with IAR, KEIL and SW4STM32 to demonstrate the Bluetooth Low Energy, Thread and Mac 802-15-4 capabilities of the device.</p>
+<p><strong>A particular attention must be taken when using BLE, Thread or Mac 802-15-4 as a specific binary must be loaded inside device memory for each application. You can refer to the readme.txt of each application for the detailed information and usage.</strong></p>
+<p>They can be found under the following directories:</p>
+<ul>
+<li>Projects\NUCLEO-WB55.Nucleo\Applications\BLE</li>
+<li>Projects\NUCLEO-WB55.Nucleo\Applications\BLE_Thread</li>
+<li>Projects\NUCLEO-WB55.Nucleo\Applications\BLE_Zigbee</li>
+<li>Projects\NUCLEO-WB55.Nucleo\Applications\Mac_802_15_4</li>
+<li>Projects\NUCLEO-WB55.Nucleo\Applications\Thread</li>
+<li>Projects\NUCLEO-WB55.Nucleo\Applications\Zigbee</li>
+</ul>
+</div>
+<div class="col-sm-12 col-lg-8">
+<h1 id="update-history">Update History</h1>
+<div class="collapse">
+<input type="checkbox" id="collapse-section16" checked aria-hidden="true"> <label for="collapse-section16" aria-hidden="true">V1.13.2 / 15-February-2022</label>
+<div>
+<h2 id="main-changes">Main Changes</h2>
+<h3 id="patch">Patch</h3>
+<ul>
+<li>Introduced back the following application:
+<ul>
+<li>/P-NUCLEO-WB55.Nucleo/Applications/BLE_Zigbee/BLE_Zigbee_Static</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section15" aria-hidden="true"> <label for="collapse-section15" aria-hidden="true">V1.13.1 / 10-December-2021</label>
+<div>
+<h2 id="main-changes-1">Main Changes</h2>
+<h3 id="patch-1">Patch</h3>
+<ul>
+<li><p>Add missing Debug build configuration for /P-NUCLEO-WB55.Nucleo/Applications/BLE/BLE_DataThroughput/CubeIDE/</p></li>
+<li>[Zigbee] Correct the way the traces are being displayed when using the OTA application:
+<ul>
+<li>/P-NUCLEO-WB55.Nucleo/Applications/Zigbee/Zigbee_OTA_Client_Router</li>
+<li>/P-NUCLEO-WB55.Nucleo/Applications/Zigbee/Zigbee_OTA_Server_Coord</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section14" aria-hidden="true"> <label for="collapse-section14" aria-hidden="true">V1.13.0 / 12-November-2021</label>
+<div>
+<h2 id="main-changes-2">Main Changes</h2>
+<h3 id="maintenance">Maintenance</h3>
+<ul>
+<li>Update of FW projects following changes in latest version of HAL/LL and Middlewares</li>
+<li>Add support of new applications:
+<ul>
+<li>/P-NUCLEO-WB55.Nucleo/Applications/BLE/BLE_AT_Server</li>
+<li>/P-NUCLEO-WB55.Nucleo/Applications/BLE_LLD/BLE_LLD_Datarate</li>
+<li>/P-NUCLEO-WB55.Nucleo/Applications/Thread/Thread_RCP_Cli_Cmd</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section13" aria-hidden="true"> <label for="collapse-section13" aria-hidden="true">V1.12.0 / 24-June-2021</label>
+<div>
+<h2 id="main-changes-3">Main Changes</h2>
+<h3 id="maintenance-1">Maintenance</h3>
+<ul>
+<li>Update of FW projects following changes in latest version of HAL/LL and Middlewares</li>
+<li>Add support of new applications:
+<ul>
+<li>/P-NUCLEO-WB55.Nucleo/Applications/BLE_LLD/BLE_LLD_Chat</li>
+<li>/P-NUCLEO-WB55.Nucleo/Applications/BLE_LLD/BLE_LLD_Proximity</li>
+<li>/P-NUCLEO-WB55.Nucleo/Applications/Thread/Thread_RCP</li>
+</ul></li>
+<li>Templates MDK-ARM projects migrated to ARM Compiler 6 (AC-5 like warnings)</li>
+<li>Update linker files templates for all IDE (.icf/.sct/.ld)
+<ul>
+<li>RAM start address has been updated from 0x20000000/0x20000004 to 0x20000008 to be aligned on a 8 byte boundary, and be compatible with ARM Compiler 6 (Keil MDK-ARM)</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section12" aria-hidden="true"> <label for="collapse-section12" aria-hidden="true">V1.11.1 / 02-April-2021</label>
+<div>
+<h2 id="main-changes-4">Main Changes</h2>
+<h3 id="maintenance-2">Maintenance</h3>
+<ul>
+<li>Update BLE applications:
+<ul>
+<li>Default CFG_BLE_MAX_CONN_EVENT_LENGTH value updated for all BLE examples</li>
+<li>BLE_Ota use improved flash driver</li>
+<li>BLE_DataThroughput displayed float values correction with CubeIDE project</li>
+<li>BLE_p2pServer and BLE_p2pServer_ota code duplication removed</li>
+</ul></li>
+<li>Zigbee:
+<ul>
+<li>Support of FreeRTOS example applications:
+<ul>
+<li>Zigbee_OnOff_Client_Router_FreeRTOS</li>
+<li>Zigbee_OnOff_Server_Coord_FreeRTOS</li>
+</ul></li>
+</ul></li>
+<li>BLE_Mac:
+<ul>
+<li>ID 103245: Correct MAC stop procedure</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section11" aria-hidden="true"> <label for="collapse-section11" aria-hidden="true">V1.11.0 / 12-February-2021</label>
+<div>
+<h2 id="main-changes-5">Main Changes</h2>
+<h3 id="maintenance-3">Maintenance</h3>
+<ul>
+<li>Ensure the option “required prototype” is enabled in all IAR projects.</li>
+<li>Following deprecation of Adafruit shield, the following projects are removed:
+<ul>
+<li>Applications_uSD_Standalone.extSettings</li>
+<li>Applications_Device_Standalone.extSettings</li>
+<li>Demonstrations_LCD_1_8_SD_Joystick.extSettings</li>
+</ul></li>
+<li>Add UART Console example to demonstrate the way to send and receive characters using standard C library.</li>
+<li>Add UART Reception to IDLE event example to demonstrate the HAL UART API for reception to IDLE event in circular DMA mode.</li>
+<li>Ensure compatibility with STM32CubeMX 6.2.0</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section10"  aria-hidden="true"> <label for="collapse-section10" aria-hidden="true">V1.10.0 / 30-October-2020</label>
+<div>
+<h2 id="main-changes-6">Main Changes</h2>
+<h3 id="maintenance-4">Maintenance</h3>
+<ul>
+<li>Ensure compatibility with STM32CubeMX 6.1.0</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section9" aria-hidden="true"> <label for="collapse-section9" aria-hidden="true">V1.9.0 / 24-September-2020</label>
+<div>
+<h2 id="main-changes-7">Main Changes</h2>
+<h3 id="introduce-blethread-and-blezigbee-dynamic-concurrent-mode-the-support-of-lld-ble-and-phy_802.15.4-cli-application">Introduce BLE/Thread and BLE/Zigbee dynamic concurrent mode, the support of LLD BLE and PHY_802.15.4 CLI application</h3>
+<ul>
+<li>Update Thread, BLE, BLE Mesh, LLD BLE, MAC 802.15.4and zigbee application.</li>
+<li>Introduce following applications:
+<ul>
+<li>Applications/BLE_Thread/Ble_Thread_Dyn_SED</li>
+<li>Applications/BLE_Zigbee/BLE_Zigbee_Dyn</li>
+<li>Applications/BLE_Zigbee/BLE_Zigbee_Dyn_NVM</li>
+<li>Applications/BLE_Zigbee/BLE_Zigbee_Dyn_SED</li>
+<li>Applications/LLD_BLE/LLD_BLE_Pressbutton</li>
+<li>Applications/LLD_BLE/LLD_BLE_Proximity</li>
+<li>Applications/Phy_802_15_4/Phy_802_15_4_Cli</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section8"  aria-hidden="true"> <label for="collapse-section8" aria-hidden="true">V1.8.0 / 19-June-2020</label>
+<div>
+<h2 id="main-changes-8">Main Changes</h2>
+<h3 id="replace-sw4stm32-by-stm32cubeide-projects-files-for-all-examples-and-application">Replace SW4STM32 by STM32CubeIDE projects files for all examples and application</h3>
+<ul>
+<li>Add new application “BLE_custom” to demonstrate how to create a BLE_Custom application using STM32CubeMX 6.0.0</li>
+<li>Compatibility with STM32CubeMX 6.0.0</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section7" aria-hidden="true"> <label for="collapse-section7" aria-hidden="true">V1.6.0 / 26-March-2020</label>
+<div>
+<h2 id="main-changes-9">Main Changes</h2>
+<h3 id="ble">BLE</h3>
+<ul>
+<li><strong>Add BLE Mesh split of BLE_MeshLightingDemo project in</strong>:
+<ul>
+<li>BLE_MeshLightingLPN (Low Power Node),</li>
+<li>BLE_MeshLightingPRFNode (Proxy Relay Friend Node),</li>
+<li>BLE_MeshLightingProvisioner (Embedded Provisioner in Dynamic Mode)</li>
+</ul></li>
+<li><strong>Add BLE_RfWithFlash project</strong>
+<ul>
+<li>demonstrates the capability to erase/write the flash while a Point-to-Point communication using BLE component is active</li>
+</ul></li>
+<li><strong>Add BLE_HeartRate_ANCS and BLE_HeartRateFreeRTOS_ANCS projects (based on Sequencer &amp; FreeRTOS)</strong>
+<ul>
+<li>Demonstrate the Apple Notification Center Service to access many kinds of notifications that are generated on iOS devices</li>
+<li>Combined with Heart rate server Application</li>
+</ul></li>
+</ul>
+<h3 id="thread">Thread</h3>
+<ul>
+<li><strong>Add new application demonstrating usage of UDP packet exchange</strong>
+<ul>
+<li>Thread_Udp</li>
+</ul></li>
+</ul>
+<h3 id="zigbee">Zigbee</h3>
+<ul>
+<li><strong>Add new Zigbee applications highlighting the usage of the following clusters : Commissioning, Diagnostic, IAS_WD and Poll control</strong>
+<ul>
+<li>Those applications are provided under Applications\Zigbee:
+<ul>
+<li>Zigbee_Commissioning_Client_Coord</li>
+<li>Zigbee_Commissioning_Server_Router</li>
+<li>Zigbee_Diagnostic_Client_Router</li>
+<li>Zigbee_Diagnostic_Server_Coord</li>
+<li>Zigbee_IAS_WD_Client_Router</li>
+<li>Zigbee_IAS_WD_Server_Coord</li>
+<li>Zigbee_PollControl_Client_Coord</li>
+<li>Zigbee_PollControl_Server_SED</li>
+</ul></li>
+<li>Those application requires the usage of the <strong>stm32wb5x_Zigbee_FFD_Full_fw.bin</strong></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section6" aria-hidden="true"> <label for="collapse-section6" aria-hidden="true">V1.5.0 / 14-February-2020</label>
+<div>
+<h2 id="main-changes-10">Main Changes</h2>
+<h3 id="add-blezigbee-static-concurrent-mode-support-and-additional-zigbee-applications">Add BLE/Zigbee static concurrent mode support and additional zigbee applications</h3>
+<ul>
+<li><strong>Add BLE/Zigbee static concurrent mode support</strong>
+<ul>
+<li>A new application BLE_Zigbee_Static is provided under Applications\BLE_Zigbee\BLE_Zigbee_Static.</li>
+<li>This application requires the usage of the <strong>stm32wb5x_BLE_Zigbee_FFD_static_fw.bin</strong></li>
+</ul></li>
+<li><strong>Add new Zigbee applications highlighting the usage of the following clusters : Device temperature, Pressure Measurement and SE Messaging</strong>
+<ul>
+<li>Those applications are provided under Applications\Zigbee:
+<ul>
+<li>Zigbee_DevTemp_Server_Coord</li>
+<li>Zigbee_DevTemp_Client_Router</li>
+<li>Zigbee_PressMeas_Server_Coord</li>
+<li>Zigbee_PressMeas_Client_Router</li>
+<li>Zigbee_SE_Msg_Client_Coord</li>
+<li>Zigbee_SE_Msg_Server_Router</li>
+</ul></li>
+<li>Those application requires the usage of the <strong>stm32wb5x_Zigbee_FFD_Full_fw.bin</strong></li>
+</ul></li>
+<li><strong>Enhancement of the task scheduling management in all Zigbee applications</strong>
+<ul>
+<li>Support of new Zigbee applications on P-NUCLEO-WB55.Nucleo board in order to highlight the usage of the MeterId and PowerProfile clusters.</li>
+</ul></li>
+<li><strong>MAC_802_15_4</strong>
+<ul>
+<li>Support of a new application (Mac_802_15_4_LPM_Periodic_Transmit) highlighting the usage of the low power.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section5" aria-hidden="true"> <label for="collapse-section5" aria-hidden="true">V1.4.0 / 06-December-2019</label>
+<div>
+<h2 id="main-changes-11">Main Changes</h2>
+<h3 id="maintenance-5">Maintenance</h3>
+<ul>
+<li>Add SW4STM32 and MDK-ARM IDE files for:
+<ul>
+<li>Projects-NUCLEO-WB55.Nucleo_802_15_4_802_15_4_FFD</li>
+<li>Projects-NUCLEO-WB55.Nucleo_802_15_4_802_15_4_RFD</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" aria-hidden="true"> <label for="collapse-section4" aria-hidden="true">V1.3.0 / 11-September-2019</label>
+<div>
+<h2 id="main-changes-12">Main Changes</h2>
+<h3 id="introduction-of-zigbee-support">Introduction of ZIGBEE support</h3>
+<ul>
+<li>Ensure compatibility with <strong>STM32CubeMX V5.4</strong>.</li>
+<li><strong>Add 3 Zigbee applications</strong>:
+<ul>
+<li>Zigbee_OnOff_Coord</li>
+<li>Zigbee_OnOff_Distrib</li>
+<li>Zigbee_OnOff_Router</li>
+</ul></li>
+<li>Correct Ticket 65791 - .bin generated by SW4STM32 is too big</li>
+<li>Correct a runtime issue in Examples_MIX: I2C_OneBoard_ComSlave7_10bits_IT</li>
+<li>Ensure a workaround for “ES0394 - STM32WB55Cx/Rx/Vx device errata”: 2.2.9 Incomplete Stop 2 mode entry after a wakeup from debug upon EXTI line 48 event.
+<ul>
+<li>Examples: PWR_STOP2_RTC</li>
+<li>Examples_LL: PWR_EnterStopMode</li>
+</ul></li>
+<li>QSPI_ExecuteInPlace: Correct stm32wb55xx_flash_cm4.ld to define qspi section</li>
+<li>Add MDK-ARM and SW4STM32 projects for:
+<ul>
+<li>Thread_Coap_Generic_Ota</li>
+<li>Thread_Ota</li>
+<li>Thread_Ota_Server</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section3"  aria-hidden="true"> <label for="collapse-section3" aria-hidden="true">V1.2.0 / 26-June-2019</label>
+<div>
+<h2 id="main-changes-13">Main Changes</h2>
+<h3 id="addition-of-new-application">Addition of new application</h3>
+<p><strong>Add CKS (Customer Key Storage) application</strong></p>
+<ul>
+<li>After keys have been provisioned inside the secure area, user application can use them by calling a secure load service with an index referencing the key and no more the key itself.</li>
+<li>This application explains how to store AES crypto keys in secure area and reuse them.</li>
+<li>It is added under “Projects\P-NUCLEO-WB55.Nucleo\Applications\CKS\CKS_Crypt”</li>
+</ul>
+<p><strong>Add Applications/Thread/Thread_SED_Coap_FreeRTOS application</strong></p>
+<p>Adapt applications to new utility directory tree.</p>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section2"  aria-hidden="true"> <label for="collapse-section2" aria-hidden="true">V1.1.0 / 05-April-2019</label>
+<div>
+<h2 id="main-changes-14">Main Changes</h2>
+<h3 id="remove-binaries-addition-of-new-examples">Remove binaries, Addition of new examples</h3>
+<p>Change directory name to reflect board RPN: <a href="https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/stm32-nucleo-expansion-boards/p-nucleo-wb55.html">P-NUCLEO-WB55</a></p>
+<p>Add QSPI examples:</p>
+<ul>
+<li>QSPI_ExecuteInPlace</li>
+<li>QSPI_MemoryMapped</li>
+<li>QSPI_ReadWrite_DMA</li>
+<li>QSPI_ReadWrite_IT</li>
+<li>Those examples are created using STM32CubeMx based on a custom board with QSPI memory.</li>
+</ul>
+<p>Add LCDGlass example based on STM32CubeMX using P-NUCLEO-WB55 board and the LCDGLass from either:</p>
+<ul>
+<li><a href="https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-discovery-kits/32l476gdiscovery.html">32L476GDISCOVERY</a></li>
+<li><a href="https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-discovery-kits/32l152cdiscovery.html">32L152CDISCOVERY</a></li>
+</ul>
+<p>Add SAI directory containing links to similar STM32 products examples.</p>
+<p>Add TSC directory containing links to similar STM32 products examples.</p>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section1" aria-hidden="true"> <label for="collapse-section1" aria-hidden="true">V1.0.0 / 06-February-2019</label>
+<div>
+<h2 id="main-changes-15">Main Changes</h2>
+<h3 id="first-release">First release</h3>
+<p>First official release.</p>
+</div>
+</div>
+</div>
+</div>
+<footer class="sticky">
+<p>For complete documentation on STM32WBxx, visit: [<a href="http://www.st.com/stm32wb">www.st.com/stm32wb</a>]</p>
+<em>This release note uses up to date web standards and, for this reason, should not be opened with Internet Explorer but preferably with popular browsers such as Google Chrome, Mozilla Firefox, Opera or Microsoft Edge.</em>
+</footer>
+</body>
+</html>

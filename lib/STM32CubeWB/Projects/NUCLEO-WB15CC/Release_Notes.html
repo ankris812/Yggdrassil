@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for NUCLEO-WB15CC Projects</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../../_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="../../_htmresc/favicon.png" />
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for">Release Notes for</h1>
+<h1 id="nucleo-wb15cc-projects"><mark>NUCLEO-WB15CC Projects</mark></h1>
+<p>Copyright © 2021 STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="../../_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h1 id="purpose">Purpose</h1>
+<p>This directory contains the examples and applications to demonstrate the capabilities of the NUCLEO-WB15CC.</p>
+<p>Most of those projects are generated with STM32CubeMX tool to initialize the system, peripherals and middleware stacks.</p>
+<p>Several applications are provided ready to use with IAR, KEIL and STM32CubeIDE to demonstrate the Bluetooth Low Energy capabilities of the device.</p>
+<p><strong>A particular attention must be taken when using BLE as a specific binary must be loaded inside device memory for each application. You can refer to the readme.txt of each application for the detailed information and usage.</strong></p>
+<p>They can be found under the following directories:</p>
+<ul>
+<li>Projects\NUCLEO-WB15CC\Applications\BLE</li>
+<li>Projects\NUCLEO-WB15CC\Applications\BLE_LLD</li>
+</ul>
+</div>
+<div class="col-sm-12 col-lg-8">
+<h1 id="update-history">Update History</h1>
+<div class="collapse">
+<input type="checkbox" id="collapse-section5" checked aria-hidden="true"> <label for="collapse-section5" aria-hidden="true">V1.13.1 / 10-December-2021</label>
+<div>
+<h2 id="main-changes">Main Changes</h2>
+<h3 id="patch">Patch</h3>
+<ul>
+<li>Add missing Debug build configuration for /P-NUCLEO-WB55.Nucleo/Applications/BLE/BLE_DataThroughput/CubeIDE/</li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" aria-hidden="true"> <label for="collapse-section4" aria-hidden="true">V1.13.0 / 12-November-2021</label>
+<div>
+<h2 id="main-changes-1">Main Changes</h2>
+<h3 id="maintenance">Maintenance</h3>
+<ul>
+<li>Update of FW projects following changes in latest version of HAL/LL and Middlewares</li>
+<li>Add support of /NUCLEO-WB15CC/Templates_LL project (IAR only)</li>
+<li>Add support of new applications:
+<ul>
+<li>/NUCLEO-WB15CC/Applications/BLE/BLE_HeartRate_ota</li>
+<li>/NUCLEO-WB15CC/Applications/BLE/BLE_MeshLightingLPN</li>
+<li>/NUCLEO-WB15CC/Applications/BLE/BLE_MeshLightingPRFNode</li>
+<li>/NUCLEO-WB15CC/Applications/BLE/BLE_Ota</li>
+<li>/NUCLEO-WB15CC/Applications/BLE/BLE_p2pServer_ota</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section3" aria-hidden="true"> <label for="collapse-section3" aria-hidden="true">V1.12.0 / 24-June-2021</label>
+<div>
+<h2 id="main-changes-2">Main Changes</h2>
+<h3 id="maintenance-1">Maintenance</h3>
+<ul>
+<li>Update of FW projects following changes in latest version of HAL/LL and Middlewares</li>
+<li>Add support of new applications:
+<ul>
+<li>/NUCLEO-WB15CC/Applications/BLE_LLD/BLE_LLD_Chat</li>
+<li>/NUCLEO-WB15CC/Applications/BLE_LLD/BLE_LLD_Lowpower</li>
+</ul></li>
+<li>Templates MDK-ARM projects migrated to ARM Compiler 6 (AC-5 like warnings)</li>
+<li>Update linker files templates for all IDE (.icf/.sct/.ld)
+<ul>
+<li>RAM start address has been updated from 0x20000000/0x20000004 to 0x20000008 to be aligned on a 8 byte boundary, and be compatible with ARM Compiler 6 (Keil MDK-ARM)</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section2" aria-hidden="true"> <label for="collapse-section2" aria-hidden="true">V1.11.1 / 02-April-2021</label>
+<div>
+<h2 id="main-changes-3">Main Changes</h2>
+<h3 id="maintenance-2">Maintenance</h3>
+<ul>
+<li>Update BLE applications:
+<ul>
+<li>Default CFG_BLE_MAX_CONN_EVENT_LENGTH value updated for all BLE examples<br />
+</li>
+<li>BLE_DataThroughput displayed float values correction with Cube IDE project</li>
+<li>BLE_p2pServer and BLE_p2pServer_ota code duplication removed</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section1" aria-hidden="true"> <label for="collapse-section1" aria-hidden="true">V1.11.0 / 12-February-2021</label>
+<div>
+<h2 id="main-changes-4">Main Changes</h2>
+<h3 id="first-release">First release</h3>
+<p>First official release.</p>
+<ul>
+<li>Ensure compatibility with STM32CubeMX 6.2.0</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<footer class="sticky">
+<p>For complete documentation on STM32WBxx, visit: [<a href="http://www.st.com/stm32wb">www.st.com/stm32wb</a>]</p>
+<em>This release note uses up to date web standards and, for this reason, should not be opened with Internet Explorer but preferably with popular browsers such as Google Chrome, Mozilla Firefox, Opera or Microsoft Edge.</em>
+</footer>
+</body>
+</html>
