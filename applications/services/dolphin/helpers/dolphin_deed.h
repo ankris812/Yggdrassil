@@ -53,7 +53,6 @@ typedef enum {
     DolphinDeedBadUsbPlayScript,
 
     DolphinDeedU2fAuthorized,
-
     DolphinDeedGpioUartBridge,
 
     DolphinDeedPluginStart,
